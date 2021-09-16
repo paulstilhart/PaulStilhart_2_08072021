@@ -3,8 +3,9 @@ header{
     justify-content:space-between;
 }
 
-.menu{
+.navigation{
     display:flex;
+    text-align: justify;
 }
 
 li {
@@ -13,9 +14,9 @@ li {
 
 .conteneur{
     width: 100%;
-    background-color: red;
+    background-color: grey;
     display: flex;
-    margin: 10px;
+    margin: 1em;
 }
 
 
