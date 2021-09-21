@@ -1,28 +1,62 @@
-header{
-    display:flex;
-    justify-content:space-between;
+.navigation{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    color:#0065FC;
+    justify-content: space-between;
+    align-items: center;
+    strong:
 }
 
-.navigation{
-    display:flex;
-    text-align: justify;
-    justify-content: space-around;
-}
 
 li {
     list-style: none;
 }
 
-
 .conteneurGuest{
+    display:flex;
+    justify-content: row;
     width: 100%;
-    background-color: grey;
-    display: flex;
-    margin-block: 1em;
-    border-radius: 10px;
+    height: 100%;
 }
 
-.conteneurActivities{
+.cityGuest {
+    background-color :#F2F2F2;
+    width: 70%;
+    height: 600px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .cityGuest_Card {
+    flex-wrap: wrap;
+	background-color: white;
+    height: 200px;
+	width: 200px;
+	margin: 10px;
+	border-radius: 20px;
+}
+
+.cardImage{
+    padding: 5px;
+}
+
+img{
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.mostPopularGuest {
+    background-color: #F2F2F2;;
+    width: 30%;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+#anchorActivities{
     width: 100%;
     border-style: solid;
     border-width: 3px;
@@ -36,31 +70,21 @@ li {
 
 
 
-.cityGuest {
-  background-color: grey;
-  width: 70%;
-  margin-right: 20px;
-}
-.popularGuest {
-  background-color: purple;
-  width: 30%;
+
+
+
+
+.cityGuest_Box{
+    display:flex;
+    justify-content: row;
 }
 
-.cityGuest_Card{
-    background-color: white;
-    height: 300px;
+
+
+.footer{
+    display:flex;
+    background-color: #F2F2F2;
+    justify-content: space-around;
     width: 100%;
-}
-
-.cityGuest_Card {
-	background-color: white;
-	height: 150px;
-	width: 30%;
-	margin: 10px;
-	border-radius: 10px;
-}
-.cardImage{
-    background-color: red;
-    height: 60%;
-    border-radius: 10px 10px 0 0;
+    margin:0%;
 }
