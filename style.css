@@ -3,25 +3,49 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
+main, header{
+    margin: 2%;
+}
 .navigation{
-    width: 100%;
-    height: 5em;
-    display: flex;
+    width: auto;
+    height: 3em;
     color:#0065FC;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    strong:
 }
 
+.logo{
+    height: 100%;
+}
 
+.logo img{
+    height: 100%;
+}
 
-li {
+.navigation ul{
+    text-decoration: none;
+    width: 30%;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation a{
+    text-decoration: none;
 }
 
 
+/* Guest */
 
+#anchorGuest{
+}
+
+#anchorGuest h1{
+    font-size: 1.5em;
+}
 
 .conteneurGuest{
     display:flex;
@@ -63,7 +87,6 @@ li {
     border-radius: 20px;
 }
 
-article.cityGuest_Card {}
 
 .cardImage{
     padding: 5px;
@@ -93,31 +116,37 @@ article.cityGuest_Card {}
 }
 
 
-
+/* Activities */
 
 
 #anchorActivities{
     display:flex;
     flex-direction: column;
-    margin: 2%;
+    height: 500px;
+    width: auto;
+}
+
+#anchorActivities h1{
+    font-size: 1.5em;
 }
 
 .conteneurActivities{
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     gap: 2%;
+    flex-wrap: nowrap;
 }
+
 
 
 .ActivitiesCard{
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 30%;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
     overflow: hidden;
@@ -126,9 +155,9 @@ article.cityGuest_Card {}
 .ActivitiesImage{ /* div qui contient l'image*/
     height: 95%; /* 95% de l'espace, le texte en dessous en prend 5*/
     overflow: hidden; /* l'image ne sort pas de la div*/
-    display:flex;
-    justify-content:center;  /* tronquer l'image en centrant */
-    align-items:flex-start; /* aligné vers le haut de la div */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .ActivitiesCard p{
@@ -140,7 +169,7 @@ article.cityGuest_Card {}
 }
 
 
-
+/* Footer */
 
 #footer{
     display:flex;
@@ -162,4 +191,3 @@ article.cityGuest_Card {}
     padding-top: 2%;
     gap: 10%;
 }
-
