@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur Reservia !</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
-    <link href="css/fontAwesome/css/all.css" rel="stylesheet">
+    <link href="supports/fontAwesome/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,12 +30,18 @@
             <p>En plein centre ville ou en pleine nature</p>
             <div id="searchCityField">
                 <i class="fas fa-map-marker-alt"></i>
-                <div>Search field</div>
-                <div>Rechercher</div>
+                <input type="text" id="city" name="city" required minlength="3" maxlength="15">
+                <div id="searchButton"><strong>Rechercher</strong></div>
             </div>
         </section>
         
         <section id="filter">
+            <h1>Filtres</h1>
+        </section>
+
+        <section id="informationBanner">
+            <i class="fas fa-info-circle"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
         
         <section id="anchorGuest">
