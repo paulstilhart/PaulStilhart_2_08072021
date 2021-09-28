@@ -30,16 +30,38 @@ header, main{
 }
 
 .navigation ul{
-    width: 30%;
+    width: auto;
+    gap: 30%;
     list-style: none;
     text-decoration: none;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: flex-end;
 }
 
 .navigation a{
     text-decoration: none;
+}
+
+/* Recherche de ville  */
+
+#searchCity{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#searchCity h1,p{
+    margin: 0%;
+}
+
+#searchCityField{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
