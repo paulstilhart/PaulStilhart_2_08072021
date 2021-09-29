@@ -1,13 +1,17 @@
 /* Reset CSS et définition des polices */
 
-body{
+html body{
     margin:0;
     font-family: 'Raleway', sans-serif;
-    font-size: medium;
+    font-size: px;
 }
 
 header, main{
     margin: 2%;
+}
+
+h1{
+    font-size: 1.5rem;
 }
 
 
@@ -111,7 +115,7 @@ header, main{
     gap: 2rem;
 }
 
-#filter article{
+.filterButton{
     height: 3rem;
     display: flex;
     flex-direction: row;
@@ -138,6 +142,10 @@ header, main{
     color: #0065FC;
 }
 
+.filterButton:hover {
+    background-color: #0065FC;
+    }
+
 /* Bannière d'information  */
 
 #informationBanner{
@@ -158,52 +166,85 @@ header, main{
     color:#0065FC;
 }
 
-/* Guest : travail sur les hébergements */
-
-#anchorGuest{
-}
-
-#anchorGuest h1{
-    font-size: 1.5em;
-}
+/* Guest : travail sur les hébergements
+   et les deux sections en dessous guest et most popular guest
+*/
 
 .conteneurGuest{
-    display:flex;
-    justify-content: column;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    gap: 2%;
+    display:flex;
+    justify-content: row;
 }
 
 .guest{
+    box-sizing: border-box;
+    width: 68%;
+    height: 100%;
+    padding: 2% 2% 2% 2%;
+    gap:2%;
+    border-radius: 2rem;
+    background-color :#F2F2F2;
     display: flex;
     flex-direction: column;
-    background-color :#F2F2F2;
-    width: 70%;
-    height: 800px;
-    margin-right: 20px;
-    border-radius: 20px;
-    padding: 10px;
+    justify-content: space-between;
+
 }
 
+.mostPopularGuest{
+    box-sizing: border-box;
+    width: 30%;
+    max-height: 100%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 2rem;
+    background-color: #F2F2F2;;
+}
+
+.conteneurGuest h1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.conteneurGuest p{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+/* Hébergement à marseille : dans une ville en particulier  */
+
 .cityGuest_Box{
+    box-sizing: border-box;
+    width: 100%;
+    height: 86%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    width:100%;
-    gap: 10px;
+    justify-content: space-between;
+
 }
 
 .cityGuest_Card {
     display: flex;
     flex-direction:  column;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
     background-color: white;
     width: 30%;
-    min-width: 300px;
-    height: 250px;
-    /* margin: 20px; */
+    height: 45%;
     border-radius: 20px;
 }
 
@@ -226,14 +267,9 @@ header, main{
     align-items: flex-end;
 }
 
+/* Hébergements les plus populaires */
 
 
-.mostPopularGuest{
-    background-color: #F2F2F2;;
-    width: 30%;
-    border-radius: 20px;
-    padding: 10px;
-}
 
 
 /* Activities */
