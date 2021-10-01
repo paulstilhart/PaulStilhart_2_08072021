@@ -17,6 +17,24 @@ body{
     font-size: medium;
 }
 
+main{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media screen and (max-width: 850px){
+    main{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 
 /* Header  */
 
@@ -84,7 +102,8 @@ nav a:hover{
 #searchCitySection{
     width: 100%;
     height: auto;
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0;
+    margin:0;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -204,7 +223,8 @@ nav a:hover{
 #filterSection{
     width: 100%;
     height: auto;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -266,7 +286,8 @@ nav a:hover{
     #filterSection{
         width: 100%;
         height: auto;
-        padding: 1rem 3rem 1rem 3rem;
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -289,7 +310,8 @@ nav a:hover{
     #filterSection{
         width: 100%;
         height: auto;
-        padding: 1rem 3rem 1rem 3rem;
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -314,7 +336,8 @@ nav a:hover{
 #informationBannerSection{
     width: 100%;
     height: 4rem;
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -338,7 +361,8 @@ nav a:hover{
 #anchorGuest{
     width: 100%;
     height: auto;
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 0;
+    margin: 0;
 }
 
 .conteneurGuest{
@@ -396,12 +420,12 @@ nav a:hover{
     margin-block-end: 0rem;
 }
 
-/* Hébergement à marseille : dans une ville en particulier  */
 
 #anchorActivities{
     width: 100%;
     height: auto;
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 0;
+    margin: 0;
 }
 .cityGuest_Box{
     box-sizing: border-box;
@@ -450,10 +474,13 @@ nav a:hover{
 
 
 #anchorActivities{
+    width: 100%;
+    height: auto;
+    padding: 0 0 3rem 0;
+    margin: 0;
     display:flex;
     flex-direction: column;
-    height: auto;
-    width: auto;
+
 }
 
 #anchorActivities h1{
@@ -551,7 +578,7 @@ footer h3,p{
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     footer{
         display: flex;
         flex-direction: row;
