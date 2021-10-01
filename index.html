@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <nav class="navigation">
-            <img src="supports/images/logo/Reservia@3x.png" alt="Logo Reservia"/>
+        <img src="supports/images/logo/Reservia@3x.png" alt="Logo Reservia"/>
+        <nav>
             <ul>
                 <li><a href="#anchorGuest">Hébergements</a></li>
                 <li><a href="#anchorActivities">Activités</a></li>
@@ -25,14 +25,14 @@
     </header>
     
     <main>
-
         <section id="searchCity">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div id="searchCityField">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" id="city" name="city" placeholder="Marseille, France" required minlength="3" maxlength="15">
-                <div id="searchButton"><strong>Rechercher</strong></div>
+                <button type="submit" id="researchButton"><strong>Rechercher</strong></button>
+                <span id="researchIcon"><i class="fas fa-search "></i></span>
             </div>
         </section>
         
@@ -224,7 +224,6 @@
                 </article>
             </div>
         </section>
-
     </main>
 
     <footer>
