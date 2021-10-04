@@ -1,7 +1,18 @@
+/* 992 px pour les écrans d’ordinateurs
+    768 px pour les tablettes
+    tout ce qui est en dessous de 768 pour les téléphones portables.
+*/
+
+
+
 /* Reset CSS et définition des polices */
 
 
-/* box-sizing est appliqué à tous les éléments */
+/* box-sizing est appliqué à tous les éléments
+    Border-box : les largeur et hauteur spécifiées sont celles de l'élément dans son ensemble,
+    en conséquence les dimensions du padding ou des bordures viennent diminuer les dimensions du contenu.
+*/
+
 *{
     box-sizing: border-box;
 }
@@ -22,14 +33,14 @@ main{
     padding-right: 3rem;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 991px){
     main{
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     main{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -82,7 +93,7 @@ nav a:hover{
    un en dessous de 850px
 */
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 991px){
     dddheader{
         width: 100%;
         height: auto;
@@ -169,7 +180,7 @@ nav a:hover{
     un en dessous de 850px
 */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     #researchIcon{
         display:contents;
     }
@@ -282,7 +293,7 @@ nav a:hover{
     Un autre à 600px
  */
 
- @media screen and (max-width: 1023px){
+ @media screen and (max-width: 991px){
     #filterSection{
         width: 100%;
         height: auto;
@@ -306,7 +317,7 @@ nav a:hover{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     #filterSection{
         width: 100%;
         height: auto;
@@ -476,55 +487,145 @@ nav a:hover{
 #anchorActivities{
     width: 100%;
     height: auto;
-    padding: 0 0 3rem 0;
+    padding: 3rem 0 3rem 0;
     margin: 0;
     display:flex;
     flex-direction: column;
 
 }
 
-#anchorActivities h1{
-    font-size: 1.5em;
-}
-
 .conteneurActivities{
     width: 100%;
-    height: 100%;
+    height: 30rem;
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 
-
-
-.ActivitiesCard{
+.activitiesCard_1_4{
+    width: 22.75%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
-    height: 90%;
-    width: 30%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+    justify-content: space-between;
     overflow: hidden;
 }
 
-.ActivitiesImage{ /* div qui contient l'image*/
-    height: 95%; /* 95% de l'espace, le texte en dessous en prend 5*/
-    overflow: hidden; /* l'image ne sort pas de la div*/
+.conteneur_2_3_5_6{
+    width: 22.75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activitiesCard_2_3_5_6{
+    width: 100%;
+    height: 48%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+}
+
+.activitiesImage{
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-}
-
-.ActivitiesCard p{
-    display: flex;
     align-items: center;
-    height: 5%;
-    padding-left: 10%;
-
+}
+.conteneurActivities img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.conteneurActivities p{
+    width: 100%;
+    height: 5%;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Activités responsives */
+
+@media screen and (max-width: 991px){
+    .conteneurActivities{
+        width: 100%;
+        height: 60rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .activitiesCard_1_4{
+        width: 48.5%;
+        height: 48.5%;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .conteneur_2_3_5_6{
+        width: 48.5%;
+        height: 48.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .conteneurActivities{
+        width: 100%;
+        height: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .activitiesCard_1_4{
+        width: 100%;
+        height: 16.67%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .conteneur_2_3_5_6{
+        width: 100%;
+        height: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .activitiesCard_2_3_5_6{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        overflow: hidden;
+    }
+
+}
 
 /* Footer */
 
@@ -565,7 +666,7 @@ footer h3,p{
    un en dessous de 500px
 */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 991px) {
     footer{
         display: flex;
         flex-direction: row;
@@ -578,7 +679,7 @@ footer h3,p{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     footer{
         display: flex;
         flex-direction: row;
