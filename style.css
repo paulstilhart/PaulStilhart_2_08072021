@@ -512,6 +512,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .conteneur_2_3_5_6{
@@ -531,6 +532,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-between;    
     overflow: hidden;
+    text-decoration: none;
 }
 
 .activitiesImage{
