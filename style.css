@@ -513,6 +513,7 @@ nav a:hover{
     justify-content: space-between;
     overflow: hidden;
     text-decoration: none;
+    color:black;
 }
 
 .conteneur_2_3_5_6{
@@ -533,6 +534,7 @@ nav a:hover{
     justify-content: space-between;    
     overflow: hidden;
     text-decoration: none;
+    color:black;
 }
 
 .activitiesImage{
