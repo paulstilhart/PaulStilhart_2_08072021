@@ -234,7 +234,7 @@ nav a:hover{
 #filterSection{
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 2rem 0rem 0rem 0rem;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -297,7 +297,7 @@ nav a:hover{
     #filterSection{
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 2rem 0rem 0rem 0rem;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -321,7 +321,7 @@ nav a:hover{
     #filterSection{
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 2rem 0rem 0rem 0rem;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -346,8 +346,8 @@ nav a:hover{
 
 #informationBannerSection{
     width: 100%;
-    height: 4rem;
-    padding: 0;
+    height: auto;
+    padding: 2rem 0rem 2rem 0rem;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -497,6 +497,7 @@ nav a:hover{
 .conteneurActivities{
     width: 100%;
     height: 30rem;
+    gap: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -504,7 +505,7 @@ nav a:hover{
 }
 
 .activitiesCard_1_4{
-    width: 22.75%;
+    width: calc(25% - 1rem);
     height: 100%;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
@@ -516,8 +517,9 @@ nav a:hover{
 }
 
 .conteneur_2_3_5_6{
-    width: 22.75%;
+    width: calc(25% - 1rem);
     height: 100%;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -525,7 +527,7 @@ nav a:hover{
 
 .activitiesCard_2_3_5_6{
     width: 100%;
-    height: 48%;
+    height: 50%;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
     display: flex;
@@ -565,14 +567,15 @@ nav a:hover{
     .conteneurActivities{
         width: 100%;
         height: 60rem;
+        gap: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     .activitiesCard_1_4{
-        width: 48.5%;
-        height: 48.5%;
+        width: calc(50% - 1rem);
+        height: calc(50% - 1rem);
         border-radius: 1rem;
         box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
         display: flex;
@@ -582,8 +585,9 @@ nav a:hover{
         text-decoration: none;
     }
     .conteneur_2_3_5_6{
-        width: 48.5%;
-        height: 48.5%;
+        width: calc(50% - 1rem);
+        height: calc(50% - 1rem);
+        gap: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -594,6 +598,7 @@ nav a:hover{
     .conteneurActivities{
         width: 100%;
         height: 100rem;
+        gap: 0rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -614,6 +619,7 @@ nav a:hover{
     .conteneur_2_3_5_6{
         width: 100%;
         height: 33.33%;
+        gap: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
