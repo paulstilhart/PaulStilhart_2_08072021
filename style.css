@@ -42,8 +42,8 @@ main{
 
 @media screen and (max-width: 767px){
     main{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }
 
@@ -181,6 +181,15 @@ nav a:hover{
 */
 
 @media screen and (max-width: 767px){
+    #searchCitySection{
+        width: 100%;
+        height: auto;
+        padding: 0rem 1rem 0rem 1rem;
+        margin:0;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
     #researchIcon{
         display:contents;
     }
@@ -321,7 +330,7 @@ nav a:hover{
     #filterSection{
         width: 100%;
         height: auto;
-        padding: 2rem 0rem 0rem 0rem;
+        padding: 2rem 1rem 0rem 1rem;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -363,6 +372,18 @@ nav a:hover{
     justify-content: flex-start;
     align-items: center;
     color:#0065FC;
+}
+
+@media screen and (max-width: 767px){
+    #informationBannerSection{
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem 2rem 1rem;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /* Guest : travail sur les hébergements
@@ -509,6 +530,7 @@ nav a:hover{
 .mostPopularTitle{
     width: 100%;
     height: 8%;
+    padding:0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -588,6 +610,16 @@ nav a:hover{
         flex-direction: column;
         justify-content: space-between;
     }
+    .conteneurMostPopularGuest{
+        width: 100%;
+        height: 30%;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: #F2F2F2;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .guestBox{
         width: 100%;
         height: 84%;
@@ -608,16 +640,6 @@ nav a:hover{
         flex-direction:  column;
         justify-content: space-between;
         text-decoration: none;
-    }
-    .conteneurMostPopularGuest{
-        width: 100%;
-        height: 30%;
-        padding: 2rem;
-        border-radius: 2rem;
-        background-color: #F2F2F2;;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     .mostPopularTitle{
         width: 100%;
@@ -655,6 +677,106 @@ nav a:hover{
     }
 }
 
+@media screen and (max-width: 767px){
+    #anchorGuest{
+        width: 100%;
+        height: 200rem;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .conteneurGuest{
+        width: 100%;
+        height: 70%;
+        padding: 0rem 1rem 0rem 1rem;
+        background-color: white;
+        border-radius: 2rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .conteneurMostPopularGuest{
+        width: 100%;
+        height: 30%;
+        padding: 0rem 1rem 2rem 1rem;
+        border-radius: 0;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .guestBox{
+        width: 100%;
+        height: 95%;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .guestCard{
+        width: 100%;
+        height: calc(16.66% - 0.84rem);
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction:  column;
+        justify-content: space-between;
+        text-decoration: none;
+        box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
+    }
+    .guestCardText{
+        width: 100%;
+        height: 35%;
+        padding: 1rem;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mostPopularTitle{
+        width: 100%;
+        height: 10%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .mostPopularGuestBox{
+        width: 100%;
+        height: 95%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mostPopularGuestCard{
+        width: 100%;
+        height: calc(33.33% - 00.66rem);
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction:  row;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+    .mostPopularGuestCardDescription{
+        width: 60%;
+        height: 100%;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
 /* Activities */
 
 
@@ -686,7 +808,7 @@ nav a:hover{
     width: calc(25% - 1rem);
     height: 100%;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+    box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -707,7 +829,7 @@ nav a:hover{
     width: 100%;
     height: 50%;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+    box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
@@ -755,7 +877,7 @@ nav a:hover{
         width: calc(50% - 1rem);
         height: calc(50% - 1rem);
         border-radius: 1rem;
-        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -773,6 +895,14 @@ nav a:hover{
 }
 
 @media screen and (max-width: 767px){
+    #anchorActivities{
+        width: 100%;
+        height: auto;
+        padding: 3rem 1rem 3rem 1rem;
+        margin: 0;
+        display:flex;
+        flex-direction: column;
+    }
     .conteneurActivities{
         width: 100%;
         height: 100rem;
@@ -787,7 +917,7 @@ nav a:hover{
         height: 16.67%;
         margin-bottom: 1rem;
         border-radius: 1rem;
-        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -807,7 +937,7 @@ nav a:hover{
         height: 50%;
         margin-bottom: 1rem;
         border-radius: 1rem;
-        box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.267);
+        box-shadow: 0rem 0rem 0.3rem 0.3rem rgba(119, 119, 119, 0.267);
         display: flex;
         flex-direction: column;
         justify-content: space-between;    
