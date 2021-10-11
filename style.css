@@ -1075,9 +1075,9 @@ footer ul{
     list-style: none;
 }
 
-footer h3{
-    margin: 0;
-    padding: 0;
+
+footer strong{
+    font-size: 1.17rem;
 }
 
 footer p{
