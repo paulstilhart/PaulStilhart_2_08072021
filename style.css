@@ -165,18 +165,22 @@ nav li:hover{
 #searchCitySection{
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 0rem 0rem 0rem 0rem;
     margin:0;
-    gap: 1rem;
+    gap: 0rem;
     display: flex;
     flex-direction: column;
 }
 
-#searchCitySection h1,p{
+#searchCitySection h1{
     margin: 0;
-    padding: 0;
+    padding: 0rem 0rem 0.5rem 0rem;
 }
 
+#searchCitySection p{
+    margin: 0;
+    padding: 0rem 0rem 1rem 0rem;
+}
 #searchCityField{
     width: 30rem;
     height: 3rem;
@@ -229,7 +233,7 @@ nav li:hover{
 
 /*  Recherche de ville = searchCity RESPONSIVE
     On définit 1 breakpoints
-    un en dessous de 850px
+    un en dessous de 767px
 */
 
 @media screen and (max-width: 767px){
@@ -238,7 +242,7 @@ nav li:hover{
         height: auto;
         padding: 0rem 1rem 0rem 1rem;
         margin:0;
-        gap: 1rem;
+        gap: 0rem;
         display: flex;
         flex-direction: column;
     }
