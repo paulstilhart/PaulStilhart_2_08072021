@@ -15,6 +15,7 @@
 
 *{
     box-sizing: border-box;
+    color: black;
 }
 
 body{
@@ -88,6 +89,10 @@ nav a{
     border-top: solid #0065FC;
     border-width: 0.2rem;
     padding-top: calc(3rem - 0.2rem);
+}
+
+header strong{
+    color: #0065FC;
 }
 
 /* Header responsive */
@@ -237,6 +242,10 @@ nav a{
     color: white;
     border: #F2F2F2;
     background-color: #0065FC;
+}
+
+#researchButton strong{
+    color: white;
 }
 
 #researchIcon{
