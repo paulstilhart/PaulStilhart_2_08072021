@@ -484,8 +484,6 @@ header strong{
     color:#F2F2F2;
 }
 
-/*  Conteneur principaux et code commun pour les titres etc... */
-
 #anchorGuest{
     width: 100%;
     height: 45rem;
@@ -494,7 +492,15 @@ header strong{
     gap: 2rem;
     display: flex;
     flex-direction: row;
+    font-size: 0.9rem;
 }
+
+#anchorGuest h1{
+    font-size: 1.3rem;
+}
+/*  Conteneur principaux */
+
+
 
 .conteneurGuest{
     width: 70%;
@@ -523,7 +529,6 @@ header strong{
 .conteneurGuest h1{
     width: 100%;
     height: 8%;
-    font-size: 1.3rem;
     padding: 0;
     margin: 0;
     margin-block-start: 0rem;
@@ -589,8 +594,7 @@ header strong{
 .guestCardText{
     width: 100%;
     height: 35%;
-    padding: 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -619,7 +623,6 @@ header strong{
 .mostPopularTitle h1{
     width: 90%;
     height: 100%;
-    font-size: 1.3rem;
     padding: 0;
     margin: 0;
     margin-block-start: 0rem;
@@ -673,7 +676,6 @@ header strong{
     width: 60%;
     height: 100%;
     padding: 1rem;
-    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -694,6 +696,7 @@ header strong{
         gap: 2rem;
         display: flex;
         flex-direction: column;
+        font-size: 0.8rem;
     }
     .conteneurGuest{
         width: 100%;
@@ -767,7 +770,6 @@ header strong{
         width: 60%;
         height: 100%;
         padding: 0.5rem;
-        font-size: 0.9rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -777,16 +779,17 @@ header strong{
 @media screen and (max-width: 767px){
     #anchorGuest{
         width: 100%;
-        height: 200rem;
+        height: 120rem;
         padding: 0rem 0rem 0rem 0rem;
         margin: 0;
         gap: 1rem;
         display: flex;
         flex-direction: column-reverse;
+        font-size: 0.9rem;
     }
     .conteneurGuest{
         width: 100%;
-        height: 70%;
+        height: 75%;
         padding: 0rem 1rem 0rem 1rem;
         background-color: white;
         border-radius: 2rem;
@@ -796,7 +799,7 @@ header strong{
     }
     .conteneurMostPopularGuest{
         width: 100%;
-        height: 30%;
+        height: 25%;
         padding: 0rem 1rem 2rem 1rem;
         border-radius: 0;
         background-color: #F2F2F2;
@@ -829,8 +832,7 @@ header strong{
     .guestCardText{
         width: 100%;
         height: 35%;
-        padding: 1rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -879,8 +881,7 @@ header strong{
     .mostPopularGuestCardDescription{
         width: 60%;
         height: 100%;
-        padding: 0.5rem;
-        font-size: 0.9rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -936,6 +937,31 @@ header strong{
     justify-content: space-between;
 }
 
+
+.activitiesCard_2{
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(119, 119, 119, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.activitiesCard_3{
+    width: 100%;
+    height: 40%;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(119, 119, 119, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+    text-decoration: none;
+}
+
 .activitiesCard_2_3_5_6{
     width: 100%;
     height: 50%;
@@ -971,6 +997,7 @@ header strong{
     justify-content: flex-start;
     align-items: center;
     color:black;
+    font-size: 0.9rem;
 }
 
 /* Activités responsives */
@@ -1017,7 +1044,7 @@ header strong{
     }
     .conteneurActivities{
         width: 100%;
-        height: 100rem;
+        height: 80rem;
         gap: 0rem;
         display: flex;
         flex-direction: column;
@@ -1043,6 +1070,30 @@ header strong{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .activitiesCard_2{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(119, 119, 119, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .activitiesCard_3{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(119, 119, 119, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        overflow: hidden;
+        text-decoration: none;
     }
     .activitiesCard_2_3_5_6{
         width: 100%;
